@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Cards from './components/Card';
 import { Navigation, ShareIcon } from 'lucide-react';
 import Link from 'next/link';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 import NavBar from './components/Navigation';
 
 export default function Home() {
