@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  /* Remove focus styles completely */
+  .no-focus {
+    @apply focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0;
+  }
+
+  /* Custom focus style with a subtle ring */
+  .focus-subtle {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-opacity-50;
+  }
+
+  /* High contrast focus style for better accessibility */
+  .focus-accessible {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-opacity-100;
+  }
+
+  /* Custom focus style with underline */
+  .focus-underline {
+    @apply focus-visible:outline-none focus-visible:underline focus-visible:decoration-2 focus-visible:underline-offset-2;
+  }
+}
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
